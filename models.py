@@ -66,13 +66,13 @@ class Risultati(statistichePartite):
     data = CharField(max_length = 10)
     campionato = TextField()
     
-    squadra_casa = TextField()
-    squadra_trasferta = TextField()
+    squadra_casa = TextField(null = True)
+    squadra_trasferta = TextField(null = True)
 
     risultato_casa = IntegerField()
     risultato_trasferta = IntegerField()
     
-    risultato_pt = IntegerField()
-    risultato_pt = IntegerField()
+    risultato_pt_casa = IntegerField()
+    risultato_pt_trasferta = IntegerField()
     
     data_run = CharField(max_length = 19)
